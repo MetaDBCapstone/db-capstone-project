@@ -42,6 +42,7 @@ CREATE TABLE `bookings` (
 
 LOCK TABLES `bookings` WRITE;
 /*!40000 ALTER TABLE `bookings` DISABLE KEYS */;
+INSERT INTO `bookings` VALUES (1,1,'2023-05-24',1,1),(2,2,'2023-05-25',2,2);
 /*!40000 ALTER TABLE `bookings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,6 +69,7 @@ CREATE TABLE `customer_details` (
 
 LOCK TABLES `customer_details` WRITE;
 /*!40000 ALTER TABLE `customer_details` DISABLE KEYS */;
+INSERT INTO `customer_details` VALUES (1,'John Doe','1234567890','123 Main St'),(2,'Jane Smith','9876543210','456 Elm St'),(3,'Mary Johnson','987654321','789 Oak St'),(4,'Michael Smith','123456789','456 Maple Ave'),(5,'Emily Davis','555555555','123 Pine Ln'),(6,'Daniel Anderson','777777777','789 Elm Rd'),(7,'Olivia Wilson','999999999','321 Cedar St');
 /*!40000 ALTER TABLE `customer_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -96,6 +98,7 @@ CREATE TABLE `menu` (
 
 LOCK TABLES `menu` WRITE;
 /*!40000 ALTER TABLE `menu` DISABLE KEYS */;
+INSERT INTO `menu` VALUES (1,'Italian','Bruschetta','Lasagna','Wine','Tiramisu',25),(2,'Mexican','Guacamole','Tacos','Margarita','Churros',15),(3,'Indian','Samosa','Butter Chicken','Mango Lassi','Gulab Jamun',19),(4,'Chinese','Spring Rolls','Sweet and Sour Chicken','Green Tea','Fortune Cookies',15),(5,'Greek','Tzatziki','Moussaka','Ouzo','Baklava',21),(6,'Japanese','Edamame','Sushi','Green Tea','Mochi Ice Cream',22),(7,'Thai','Tom Yum Soup','Pad Thai','Thai Iced Tea','Mango Sticky Rice',17);
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -123,6 +126,7 @@ CREATE TABLE `order_delivery_status` (
 
 LOCK TABLES `order_delivery_status` WRITE;
 /*!40000 ALTER TABLE `order_delivery_status` DISABLE KEYS */;
+INSERT INTO `order_delivery_status` VALUES (3,'2023-05-26','Delivered',3),(4,'2023-05-27','Pending',4),(5,'2023-05-28','Delivered',5),(6,'2023-05-29','Pending',6),(7,'2023-05-30','Delivered',7);
 /*!40000 ALTER TABLE `order_delivery_status` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -153,6 +157,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (3,'2023-05-26',3,1,2),(4,'2023-05-27',4,2,3),(5,'2023-05-28',5,3,1),(6,'2023-05-29',6,4,2),(7,'2023-05-30',7,5,1);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -179,6 +184,7 @@ CREATE TABLE `staff_information` (
 
 LOCK TABLES `staff_information` WRITE;
 /*!40000 ALTER TABLE `staff_information` DISABLE KEYS */;
+INSERT INTO `staff_information` VALUES (1,'David Johnson','Manager',5000),(2,'Sarah Wilson','Waiter',2500);
 /*!40000 ALTER TABLE `staff_information` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -191,4 +197,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-24  0:33:54
+-- Dump completed on 2023-05-24  1:11:38
